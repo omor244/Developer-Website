@@ -1,0 +1,126 @@
+
+.fira-sans{
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+*{
+  background: #F5F5F5;
+
+}
+
+
+/* sheard-style */
+
+.display-flex{
+    display: flex;
+}
+
+/* sheard-style */
+
+/* start-navber */
+.nav-title{
+    color: #0E0E0E;
+    font-weight:700;
+    font-size: 32px ;
+}
+.nav-btn{
+    color: #006A50;
+    border: 1px solid #006A50;
+    border-radius: 8px ;
+    font-weight: 700;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.navber{
+    justify-content: space-between;
+    align-items: center;
+     margin: 10px 160px ;
+}
+/* end-navber */
+
+/* banner-start */
+.banner-container{
+   background-color: #C6E4D6;
+   max-width: 1200px;
+   height: 560px;
+   margin: 0 auto;
+   margin-top: 50px;
+   border-radius: 24px;
+   gap: 60px;
+   align-items: center;
+   padding: 60px;
+}
+
+.banner-content1{
+    width: 550px;
+    background-color: #C6E4D6;
+}
+.banner-content1 .banner-para{
+    font-size: 24px;
+    font-weight: 500;
+    color: #0E0E0E80;
+    background-color: #C6E4D6;
+;
+}
+.banner-content1 .banner-para2{
+    font-weight: 700;
+    font-size: 56px;
+    margin-top: 0px;
+    background-color: #C6E4D6;
+}
+.banner-content1 .banner-button{
+    background-color: #006A50;
+    font-size: 18px ;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 14px 34px;
+    border: none ;
+    border-radius: 8px;
+}
+
+.banner-content2 {
+    width: 400px;
+    height: 380px;
+    
+    
+}
+.banner-content2 img{
+background-color: #C6E4D6;
+}
+/* banner-end */
+/* start-main */
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.card{
+    width: 302px;
+    height: 244px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 10px 0 10px #FFFFFF;
+}
+.card-container .card > h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: #0E0E0ECC;
+    background-color: #FFFFFF;
+}
+.card-container .card > p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #0e0e0eb4;
+    background-color: #FFFFFF;
+}
+/* end-main */
+
+
+
+
+
