@@ -1,3 +1,6 @@
+
+
+
 .fira-sans {
     font-family: "Fira Sans", sans-serif;
     font-weight: 100;
@@ -5,24 +8,23 @@
 }
 
 
+
 body {
     background-color: #0e0e0e09;
+    margin: 0;
 }
 
-
-/* sheard-style */
-
+/* shared-style */
 .display-flex {
     display: flex;
+
 }
 
 .sheard-color {
     background-color: black;
 }
 
-/* sheard-style */
-
-/* start-navber */
+/* start-navbar */
 .nav-title {
     color: #0E0E0E;
     font-weight: 700;
@@ -42,26 +44,33 @@ body {
 .navber {
     justify-content: space-between;
     align-items: center;
-    margin: 10px 160px;
+    max-width: 1200px;
+    /* Use max-width */
+    margin: 10px auto;
+    width: 90%;
+  
 }
-
-/* end-navber */
 
 /* banner-start */
 .banner-container {
     background-color: #C6E4D6;
     max-width: 1200px;
-    height: 560px;
-    margin: 0 auto;
-    margin-top: 50px;
+    width: 90%;
+    height: auto;
+   
+    min-height: 560px;
+  
+    margin: 50px auto;
     border-radius: 24px;
     gap: 60px;
     align-items: center;
     padding: 60px;
+    box-sizing: border-box;
 }
 
 .banner-content1 {
     width: 550px;
+    max-width: 100%;
     background-color: #C6E4D6;
 }
 
@@ -70,7 +79,6 @@ body {
     font-weight: 500;
     color: #0E0E0E80;
     background-color: #C6E4D6;
-    ;
 }
 
 .banner-content1 .banner-para2 {
@@ -92,26 +100,26 @@ body {
 
 .banner-content2 {
     width: 400px;
-    height: 380px;
-
-
+    max-width: 100%;
 }
 
 .banner-content2 img {
     background-color: #C6E4D6;
+    width: 100%;
+    height: auto;
 }
 
-/* banner-end */
 /* start-main */
 .main {
     max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 50px;
+    width: 90%;
+    margin: 50px auto;
 }
 
 .card-container {
     gap: 30px;
-
+    justify-content: center;
+    
 }
 
 .card {
@@ -140,51 +148,45 @@ body {
 /* vision-container-start */
 .section-vision-container {
     margin-top: 100px;
-
-
 }
 
 .section-vision-container .vision-para {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     font-size: 16px;
     line-height: 24px;
     color: #0E0E0EB2;
     font-weight: 400;
 }
 
-.section-vision-container>.card-container>.card-2 {
-    background-color: #5490F533;
+.section-vision-container>.card-container>.card-2,
+.section-vision-container>.card-container>.card-3,
+.section-vision-container>.card-container>.card-4 {
     width: 352px;
-    height: 244px;
+    max-width: 100%;
+    height: auto;
+    /* Auto height to prevent text overflow on small screens */
+    min-height: 244px;
     border-radius: 8px;
     box-shadow: 10px 0 10px #FFFFFF;
     padding: 15px;
+}
 
+.section-vision-container>.card-container>.card-2 {
+    background-color: #5490F533;
 }
 
 .section-vision-container>.card-container>.card-3 {
     background-color: #C6E4D6;
-    width: 352px;
-    height: 244px;
-    border-radius: 8px;
-    box-shadow: 10px 0 10px #FFFFFF;
-    padding: 15px;
-
 }
 
 .section-vision-container>.card-container>.card-4 {
     background-color: #F7EBCF;
-    width: 352px;
-    height: 244px;
-    border-radius: 8px;
-    box-shadow: 10px 0 10px #FFFFFF;
-    padding: 15px;
-
 }
 
 .vision-title {
     color: #0E0E0ECC;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -194,142 +196,91 @@ body {
     font-weight: 400;
     font-size: 16px;
     margin-top: 15px;
-
 }
 
-.section-vision-container .vision-btn {
-    background-color: #5490F5;
-    padding: 11px 20px;
-    border: none;
-    border-radius: 8px;
-    margin-top: 15px;
-
-}
-
-.section-vision-container .vision-btn-1 {
-    background-color: #09A15C;
-    padding: 11px 20px;
-    border: none;
-    border-radius: 8px;
-    margin-top: 15px;
-
-}
-
-.section-vision-container .vision-btn-2 {
-    background-color: #FFC239;
-    padding: 11px 20px;
-    border: none;
-    border-radius: 8px;
-    margin-top: 15px;
-
-}
-
-/* vision-container-end */
-
-/*start-yunus  */
-
+/* yunus-section */
 .yunus {
     background-image: url(../assets/quote-bg.png);
     background-repeat: no-repeat;
     margin-top: 50px;
-    width: 1200px;
-    height: 250px;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
     background-color: #FFFFFF;
     box-shadow: 10px 0 10px #FFFFFF;
     border: 0.50px solid #0e0e0e21;
     border-radius: 16px;
     padding: 20px 40px;
+    box-sizing: border-box;
 }
 
-.yunus-discription {
-    font-size: 16px;
-    font-weight: 400;
-    color: #0E0E0ECC;
-    line-height: 24px;
-    margin-top: 30px;
-}
-
-.yunus-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #0E0E0ECC;
-    line-height: 24px;
-}
-
-.yunus-containt>p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #0E0E0E99;
-}
-
-
+/* opinion-section */
 .opinion-container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin-top: 80px;
-
 }
-
-.opinion-title {
-    font-size: 40px;
-    font-weight: 700;
-    color: #0E0E0E;
-}
-
 
 .opinion-contait {
-    width: 1200px;
-    height: 400px;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
     background-color: #FFFFFF;
     box-shadow: 10px 0 10px #FFFFFF;
     border-radius: 16px;
     padding: 50px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    /* Table scroll for mobile */
 }
 
-.opinion-table{
+.opinion-table {
     border-collapse: collapse;
     width: 100%;
-    height: 80%;   
 }
 
-td, th {
-  border: 1px solid #dddddd; 
-  text-align: left;
-  padding: 20px;
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 20px;
 }
+
 th {
     background-color: #C6E4D6;
     color: #0E0E0E;
     font-size: 20px;
     font-weight: 600;
 }
-td{
-    color: #0E0E0E;
-    font-size: 16px;
-    font-weight: 600;
-}
-.td{
+
+.td {
     background-color: #C6E4D6;
     border: 1px solid #0E0E0E26;
-    margin-left: 50px;
-    padding:  13px 20px;
+    padding: 13px 20px;
     border-radius: 4px;
     font-weight: 600;
-}
-.fa-solid{
-    margin-left: 10px;
+    cursor: pointer;
 }
 
+/* --- RESPONSIVE BREAKPOINT --- */
+@media (max-width: 768px) {
+    .banner-container {
+        flex-direction: column;
+        /* Stack image and text */
+        text-align: center;
+        padding: 40px 20px;
+    }
 
+    .banner-content1 .banner-para2 {
+        font-size: 32px;
+        /* Shrink title slightly for mobile */
+    }
 
+    .navber {
+        margin: 10px auto;
+    }
 
-
-
-/*end-yunus  */
-
-
-
-
-
-
-/* end-main */
+    .td {
+        margin-left: 0;
+    }
+}
